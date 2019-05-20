@@ -83,3 +83,11 @@ header > h1 {
   color: white;
   margin-top: 40px;
 }
+
+.winner {
+  border-color: green;
+}
+
+.loser {
+  border-color: red;
+}

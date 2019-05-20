@@ -21,6 +21,8 @@ function win(user, comp) {
   userScore_span.innerHTML = userScore+" ";
 
   result_div.append(`${convertToword(user)} beats ${convertToword(comp)}! You Win!!!`);
+  document.getElementById(user).classList.add("winner");
+  setTimeout(()=>{document.getElementById(user).classList.remove("winner")}, 2000)
 }
 
 function convertToword(letter) {
@@ -35,6 +37,8 @@ const lose = (user, comp) => {
   compScore++;
   computerScore_span.innerHTML = " "+compScore
   result_div.append(`${convertToword(user)} defeated by  ${convertToword(comp)}! You Lose!`);
+  document.getElementById(user).classList.add("loser");
+  setTimeout(()=>{document.getElementById(user).classList.remove("loser")}, 2000)
 }
 
 const draw = () => {
@@ -42,9 +46,7 @@ const draw = () => {
 }
 
 function game(userChoice) {
-  alert(userChoice)
   const computer = getComputerChoice()
-  alert(computer)
   result_div.innerHTML = ""
   switch (userChoice + computer) {
     case "rs":
