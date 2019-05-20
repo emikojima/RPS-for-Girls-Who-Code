@@ -1,5 +1,8 @@
 # RPS-for-Girls-Who-Code
 
+# DEMO IT HERE
+http://rockpapersiz.surge.sh/
+
 ## Classic Rock Paper Scissors Game
 + Built with JS, HTML, CSS 
 ## To Play
